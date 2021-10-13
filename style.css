@@ -1,0 +1,69 @@
+
+body{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+ /* scrollbar*/
+ ::-webkit-scrollbar {
+    width: 5px;
+    margin: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: lightgrey; 
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: grey; 
+  }
+
+  
+
+HTML{
+    scroll-behavior: smooth;  
+    overflow-x: hidden; 
+}
+
+.tarjetas{
+  
+    overflow-x: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+
+}
+
+.card{
+    width: 500px !important;
+    min-width: 300px !important;
+    margin:  5px;
+    height: 450px;
+}
+
+.w-50{
+    width: 500px !important;
+    min-width: 300px !important;
+    height: 450px;
+
+}
+
+.intro{
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.card-text{
+    margin-bottom: 0;
+}
+
+a, h5{
+    color: darkred !important;
+    font-size: 1.2em;
+}
+
