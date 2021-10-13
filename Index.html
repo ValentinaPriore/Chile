@@ -19,8 +19,7 @@
 
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">
-          <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-          Bootstrap
+          <i class="em em-red_circle" aria-role="presentation" aria-label="LARGE RED CIRCLE"></i> - ARN 
         </a>
     </nav>
 
@@ -177,8 +176,10 @@
         responsive: true,
         legend: { display: false },
         title: {
-                text: 'Ultima Encuesta',
+                text: 'Fuente: encuestadora Cadem',
                 display: true,
+                position: 'bottom',
+                align: 'start'
             },
          scales: {
              y: {
@@ -187,7 +188,12 @@
         plugins: {
             legend: {
                 display: false,
-            }
+            },
+            title: {
+                
+                position: 'bottom',
+                align: 'start'
+            },
         }
             
          }
