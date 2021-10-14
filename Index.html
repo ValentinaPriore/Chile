@@ -120,11 +120,17 @@
           </div>
           
 
-    <h3>Las encuestas</h3>
+    <h3 style="margin-bottom: 50px;">Las encuestas</h3>
+
+    <h1 class="display-4">Intención de voto</h1>
+    <p>Actualizado al 13 de octubre</p>
 
     <div style="width: 80%;">
         <canvas id="myChart" width="50" height="30"></canvas>
     </div>
+<br>
+    <h1 class="display-4">Evolución de la intención de voto</h1>
+    <p>Actualizado al 13 de octubre</p>
 
     <div style="width: 80%;">
         <canvas id="myChart2" width="50" height="30"></canvas>
@@ -133,8 +139,10 @@
     
     <script>
         var ctx = document.getElementById('myChart').getContext('2d');
+        var ctx2 = document.getElementById('myChart2').getContext('2d');
+
         
- var myChart = new Chart(ctx, {
+    var myChart = new Chart(ctx, {
      
      type: 'bar',
      data: {
@@ -199,7 +207,88 @@
          }
      }
  });
- Chart.defaults.font.size = 16;
+ 
+  
+ var myChart2 = new Chart(ctx2, {
+ 
+  type: 'line',
+  data: {
+    labels: ['30/6', '6/8', '13/8', '20/8', '27/8', '3/9', '10/9', '16/9', '24/9', '1/10', '8/10'],
+    datasets: [
+      {
+        label: 'Boric',
+        data: [24, 21, 24, 24, 20, 23, 22, 25, 23, 22, 21],
+        borderColor: 'rgba(143, 176, 217, 1)',
+        backgroundColor: 'rgba(143, 176, 217, 0)',
+      },
+      {
+        label: 'Kast',
+        data: [7, 10, 9, 10, 10, 12, 9, 10, 13, 15, 18],
+        borderColor: 'rgba(245, 59, 71,  1)',
+        backgroundColor:'rgba(29, 53, 87, 0)' ,
+      },
+      {
+        label: 'Provoste',
+        data: [13, 10, 9, 9, 13, 12, 10, 9, 10, 12, 13],
+        borderColor: 'rgba(204, 104, 222, 1)',
+        backgroundColor:'rgba(29, 53, 87, 0)' ,
+      },
+      {
+        label: 'Sichel',
+        data: [24, 24, 22, 19, 20, 19, 19, 17, 17, 12, 10],
+        borderColor: 'rgba(233, 196, 106, 1)',
+        backgroundColor:'rgba(29, 53, 87, 0)' ,
+      },
+      {
+        label: 'Enríquez-Ominami',
+        data: [0, 0, 0, 0, 3, 2, 3, 5, 4, 5, 4],
+        borderColor: 'rgba(255, 175, 204, 1)',
+        backgroundColor:'rgba(29, 53, 87, 0)' ,
+      },
+
+      {
+        label: 'Parisi',
+        data: [0, 0, 0, 0, 7, 7, 8, 6, 5, 5, 6],
+        borderColor: 'rgba(29, 53, 87, 1)',
+        backgroundColor:'rgba(29, 53, 87, 0)' ,
+      },
+
+      {
+        label: 'Artés',
+        data: [0, 0, 0, 0, 1, 0, 0, 1, 2, 1, 1],
+        borderColor: 'rgba(145, 18, 29, 1)',
+        backgroundColor:'rgba(29, 53, 87, 0)' ,
+      },
+      
+    ]
+},
+  options: {
+    responsive: true,
+    stacked: false,
+    plugins: {
+      title: {
+        display: true,
+        text: 'Chart.js Line Chart - Multi Axis'
+      }
+    },
+    scales: {
+      y: {
+        type: 'linear',
+        display: true,
+        position: 'left',
+      },
+      y1: {
+        type: 'linear',
+        display: true,
+        position: 'right',
+
+       
+        
+      },
+    }
+  },
+
+});
 
          </script>
  
