@@ -27,17 +27,18 @@
         <h1><i class="em em-flag-cl" aria-role="presentation" aria-label="Chile Flag"></i> A un mes de las elecciones</h1>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis ipsum vitae lacus placerat tempor non sit amet dolor. Fusce a posuere elit, non dictum libero. Etiam eu tempus eros. Vivamus vel turpis id lectus iaculis bibendum ut nec nibh. Phasellus ullamcorper felis a velit dictum, ut imperdiet justo vulputate. Vestibulum aliquam turpis massa, quis vestibulum nulla tempor varius. Aliquam eget laoreet dui. Duis ullamcorper massa turpis, eget dapibus sapien maximus et.</p>
-    
-        <button type="button" class="btn btn-danger">Presidenciales</button>
-        <button type="button" class="btn btn-danger">Legislativas</button>
+        
+
+        <a href="#Presidenciales" >  <button type="button" class="btn btn-danger">Presidenciales</button></a>
+       
+        <a href="#Legislativas">  <button type="button" class="btn btn-danger">Legislativas</button></a>      
         <a href="">-     Ver últimos cables de Chile</a>
 
     </div>
 
 
 
-
-    <h3>Los candidatos</h3>
+    <h3 id="Presidenciales" >Los candidatos</h3>
         <div class="tarjetas row flex-row flex-nowrap mt-4 pb-4 pt-2">
             <div class="card w-50">
               <img class="card-img-top" src="Boric.jpg" alt="Card image cap">
@@ -65,7 +66,7 @@
             <div class="card w-50">
               <img class="card-img-top" src="Provoste.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Yastna Provoste</h5>
+                <h5 class="card-title">Yasna Provoste</h5>
                 <p class="card-text"> <strong>Lista:</strong> Unidad Constituyente </p>
                 <p class="card-text"> <strong>Partido:</strong> Democracia Cristiana</p>
               </div>
@@ -118,7 +119,19 @@
                 </div>
               </div>
           </div>
-          
+          <p>
+            <a   class="btn btn-primary btn-danger" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Insertar
+            </a>
+          </p>
+
+          <div class="collapse" id="collapseExample">
+            <div style="height: 100px;" class="card card-body">
+              
+              <p> <embed src="https://bit.ly/2YXzQq2" type=""> </p>
+              <a href="">Ver visualización con Flourish</a>
+            </div>
+          </div>
 
     <h3 style="margin-bottom: 50px;">Las encuestas</h3>
 
@@ -136,6 +149,10 @@
         <canvas id="myChart2" width="50" height="30"></canvas>
     </div>
 
+    <div style="height: 100vh;" id="Legislativas">
+
+    <h3 style="margin-top: 40vh;">Próximanente</h3>
+    </div>
     
     <script>
         var ctx = document.getElementById('myChart').getContext('2d');
