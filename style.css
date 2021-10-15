@@ -62,8 +62,57 @@ HTML{
     margin-bottom: 0;
 }
 
-a, h5{
+.rojo, h5{
     color: darkred !important;
     font-size: 1.2em;
 }
 
+.extrainfo{
+  display: none;
+}
+
+.card:hover{
+height: 600px;
+transition: 0.2s;
+
+}
+
+.card:hover .extrainfo{
+  display:block;
+  transition: 1.2s;
+  
+  }
+
+.numero{
+  color: darkred;
+  font-size: 5rem;
+  padding-bottom: -15px;
+  margin-bottom: -15px;
+  font-weight: 800;
+  margin-left: auto;
+  justify-content: center;
+
+
+}
+
+.rol{
+  color: darkred;
+  font-size: 3rem;
+  padding-top: 2px;
+  margin-top: 2px;
+  margin-left: auto;
+  justify-content: center;
+}
+#text{
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  #myChart{
+    width: 80vw; 
+    height: 600px;
+    
+  
+  
+}
+}
