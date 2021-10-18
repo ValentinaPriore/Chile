@@ -4,6 +4,10 @@ body{
     padding-left: 10%;
 }
 
+*{
+  max-width: 95vw;
+}
+
  /* scrollbar*/
  ::-webkit-scrollbar {
     width: 5px;
