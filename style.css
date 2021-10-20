@@ -1,7 +1,7 @@
 
 body{
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 16%;
+    padding-left: 16%;
 }
 
 *{
@@ -44,8 +44,8 @@ HTML{
 }
 
 .card{
-    width: 500px !important;
-    min-width: 300px !important;
+    width: 800px !important;
+    min-width: 800px !important;
     margin:  5px;
     height: 450px;
 }
@@ -67,7 +67,7 @@ HTML{
 }
 
 .rojo, h5{
-    color: darkred !important;
+    color: #469ed9 !important;
     font-size: 1.2em;
 }
 
@@ -87,8 +87,10 @@ transition: 0.2s;
   
   }
 
+ 
+
 .numero{
-  color: darkred;
+  color: #469ed9;
   font-size: 5rem;
   padding-bottom: -15px;
   margin-bottom: -15px;
@@ -100,7 +102,7 @@ transition: 0.2s;
 }
 
 .rol{
-  color: darkred;
+  color:#469ed9;
   font-size: 3rem;
   padding-top: 2px;
   margin-top: 2px;
@@ -111,3 +113,15 @@ transition: 0.2s;
   display: none;
 }
 
+
+.boton-celeste{
+  background-color:#469ed9 !important;
+  color: white !important;
+}
+
+
+.texto{
+  font-size: 1.1rem;
+  margin: 50px;
+
+}
