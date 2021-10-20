@@ -47,7 +47,7 @@ HTML{
     width: 800px !important;
     min-width: 800px !important;
     margin:  5px;
-    height: 450px;
+    height: fit-content;
 }
 
 .w-50{
@@ -76,7 +76,7 @@ HTML{
 }
 
 .card:hover{
-height: 600px;
+height: fit-content;
 transition: 0.2s;
 
 }
