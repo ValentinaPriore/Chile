@@ -223,10 +223,10 @@
       <br>
       <br>
       Tanto la publicación del estudio “Plaza Pública” de la encuestadora Cadem y “Pulso ciudadano” de la empresa Activa están basados en (preguntar a Gustavo lo del 100%)
-
       </p>
+
     <h3>Intención de voto</h3>
-    <p>Actualizado al 13 de octubre</p>
+    <p>Actualizado al 20 de octubre</p>
     <a   class="btn btn-primary btn-light" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
       Insertar visualización
     </a>
@@ -271,7 +271,7 @@
 
 
     <h3>Evolución de la intención de voto</h3>
-    <p>Actualizado al 13 de octubre</p>
+    <p>Actualizado al 20 de octubre</p>
 
   <p></p>
 
@@ -458,11 +458,11 @@
      
      type: 'bar',
      data: {
-         labels: ['Boric', 'Kast', 'Provoste', 'Sichel', 'Enríquez-Ominami', 'Parisi', 'Artes'],
+         labels: ['Kast', 'Boric',  'Provoste', 'Sichel', 'Enríquez-Ominami', 'Parisi', 'Artes'],
          datasets: [{
             
 
-             data: [21, 18, 13, 10, 6, 4, 1],
+             data: [21, 20, 12, 7, 6, 4, 3],
              backgroundColor: [
                  'rgba(143, 176, 217, 0.8)',
                  'rgba(245, 59, 71, 0.8)',
@@ -536,18 +536,18 @@
      
      type: 'bar',
      data: {
-         labels: ['Boric', 'Kast', 'Provoste', 'Sichel', 'Enríquez-Ominami', 'Parisi', 'Artes'],
+         labels: ['Boric', 'Kast', 'Provoste', 'Sichel', 'Parisi', 'Enríquez-Ominami', 'Artes'],
          datasets: [{
             
 
-             data: [21, 18, 13, 10, 6, 4, 1],
+             data: [21,	16,	13,	7,	5,	3,	2],
              backgroundColor: [
                  'rgba(143, 176, 217, 0.8)',
                  'rgba(245, 59, 71, 0.8)',
                  'rgba(204, 104, 222, 0.8)',
                  'rgba(233, 196, 106, 0.8)',
-                 'rgba(255, 175, 204, 0.8)',
                  'rgba(29, 53, 87, 0.8)',
+                 'rgba(255, 175, 204, 0.8)',
                  'rgba(145, 18, 29, 0.8)'
 
              ],
@@ -556,8 +556,8 @@
                  'rgba(245, 59, 71,  1)',
                  'rgba(204, 104, 222, 1)',
                  'rgba(233, 196, 106, 1)',
-                 'rgba(255, 175, 204, 1)',
                  'rgba(29, 53, 87, 1)',
+                 'rgba(255, 175, 204, 1)',
                  'rgba(145, 18, 29, 1)'
              ],
              borderWidth: 1
@@ -612,53 +612,53 @@
  });
 
   
- var myChart2 = new Chart(ctx2, {
+      var myChart2 = new Chart(ctx2, {
  
   type: 'line',
   data: {
-    labels: ['30/7', '6/8', '13/8', '20/8', '27/8', '3/9', '10/9', '16/9', '24/9', '1/10', '8/10'],
+    labels: ['30/7', '6/8', '13/8', '20/8', '27/8', '3/9', '10/9', '16/9', '24/9', '1/10', '8/10', '14/10'],
     datasets: [
       {
         label: 'Boric',
-        data: [24, 21, 24, 24, 20, 23, 22, 25, 23, 22, 21],
+        data: [24, 21, 24, 24, 20, 23, 22, 25, 23, 22, 21, 20],
         borderColor: 'rgba(143, 176, 217, 1)',
         backgroundColor: 'rgba(143, 176, 217, 0)',
       },
       {
         label: 'Kast',
-        data: [7, 10, 9, 10, 10, 12, 9, 10, 13, 15, 18],
+        data: [7, 10, 9, 10, 10, 12, 9, 10, 13, 15, 18, 21],
         borderColor: 'rgba(245, 59, 71,  1)',
         backgroundColor:'rgba(29, 53, 87, 0)' ,
       },
       {
         label: 'Provoste',
-        data: [13, 10, 9, 9, 13, 12, 10, 9, 10, 12, 13],
+        data: [13, 10, 9, 9, 13, 12, 10, 9, 10, 12, 13, 12],
         borderColor: 'rgba(204, 104, 222, 1)',
         backgroundColor:'rgba(29, 53, 87, 0)' ,
       },
       {
         label: 'Sichel',
-        data: [24, 24, 22, 19, 20, 19, 19, 17, 17, 12, 10],
+        data: [24, 24, 22, 19, 20, 19, 19, 17, 17, 12, 10, 7],
         borderColor: 'rgba(233, 196, 106, 1)',
         backgroundColor:'rgba(29, 53, 87, 0)' ,
       },
       {
         label: 'Enríquez-Ominami',
-        data: [0, 0, 0, 0, 3, 2, 3, 5, 4, 5, 4],
+        data: [0, 0, 0, 0, 3, 2, 3, 5, 4, 5, 4, 4],
         borderColor: 'rgba(255, 175, 204, 1)',
         backgroundColor:'rgba(29, 53, 87, 0)' ,
       },
 
       {
         label: 'Parisi',
-        data: [0, 0, 0, 0, 7, 7, 8, 6, 5, 5, 6],
+        data: [0, 0, 0, 0, 7, 7, 8, 6, 5, 5, 6, 6],
         borderColor: 'rgba(29, 53, 87, 1)',
         backgroundColor:'rgba(29, 53, 87, 0)' ,
       },
 
       {
         label: 'Artés',
-        data: [0, 0, 0, 0, 1, 0, 0, 1, 2, 1, 1],
+        data: [0, 0, 0, 0, 1, 0, 0, 1, 2, 1, 1, 3],
         borderColor: 'rgba(145, 18, 29, 1)',
         backgroundColor:'rgba(29, 53, 87, 0)' ,
       },
