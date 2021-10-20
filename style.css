@@ -121,7 +121,20 @@ transition: 0.2s;
 
 
 .texto{
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 50px;
+ margin-bottom: 50px;
+}
 
+@media (max-width: 600px) {
+  body{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .texto{
+    font-size: 1.2rem;
+    margin-left: 0px;
+    margin-right: 0px;
+  
+  }
 }
