@@ -17,81 +17,42 @@
 </head>
 <body>
     <h3>Intención de voto</h3>
-    <p>Actualizado al 13 de octubre</p>
-    <div class="container" style="width: 80%; height: 80vh;">
-        <canvas  height="1" width="2" id="myChart" ></canvas>
-    </div>
-    <script>
-              var ctx = document.getElementById('myChart').getContext('2d');
+    <p>Actualizado al 20 de octubre</p>
+   
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link  active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Cadem</a>
+        <a class="nav-item nav-link " id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Activa</a>
+      </div>
+    </nav>
+      <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"> 
+        <br>
+        <h2>Plaza Pública</h2>
+        <p class="font-italic">Si las elecciones presidenciales fueran el próximo domingo, ¿Por cuál de los siguientes candidatos votaría usted? 
+        </p>
+        <br>
+        <div class="container" style="width: 80%; height: 80vh;">
+          <canvas  height="1" width="2" id="myChart" ></canvas>
+        </div>
+      </div>
 
-        
-    var myChart = new Chart(ctx, {
-     
-     type: 'bar',
-     data: {
-         labels: ['Boric', 'Kast', 'Provoste', 'Sichel', 'Enríquez-Ominami', 'Parisi', 'Artes'],
-         datasets: [{
-            
+      <div class="tab-pane " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"> 
+        <br>
+        <h2>Pulso Ciudadano</h2>
+        <p class="font-italic">Si las elecciones presidenciales fueran este domingo ¿Por quién votarías? </p>
+        <br>
+        <div class="container" style="width: 80%; height: 80vh;">
+          <canvas  height="1" width="2" id="myChart1" ></canvas>
+        </div>
+      </div>
+  </div>
+  <div style="display: none;">
+    <canvas  height="1" width="2" id="myChart2" ></canvas>
+    <canvas  height="1" width="2" id="myChart3" ></canvas>
+  </div>
+ 
 
-             data: [21, 18, 13, 10, 6, 4, 1],
-             backgroundColor: [
-                 'rgba(143, 176, 217, 0.8)',
-                 'rgba(245, 59, 71, 0.8)',
-                 'rgba(204, 104, 222, 0.8)',
-                 'rgba(233, 196, 106, 0.8)',
-                 'rgba(255, 175, 204, 0.8)',
-                 'rgba(29, 53, 87, 0.8)',
-                 'rgba(145, 18, 29, 0.8)'
-
-             ],
-             borderColor: [
-                 'rgba(143, 176, 217, 1)',
-                 'rgba(245, 59, 71,  1)',
-                 'rgba(204, 104, 222, 1)',
-                 'rgba(233, 196, 106, 1)',
-                 'rgba(255, 175, 204, 1)',
-                 'rgba(29, 53, 87, 1)',
-                 'rgba(145, 18, 29, 1)'
-             ],
-             borderWidth: 1
-         }]
-     },
-     options: {
-        tooltips: {
-        callbacks: {
-            label: function(tooltipItem) {
-                return "  %" + Number(tooltipItem.yLabel) + " de la intención de voto";
-            }
-        }
-    },
-        responsive: true,
-        maintainAspectRatio: false,
-        legend: { display: false },
-        title: {
-                text: 'Fuente: encuestadora Cadem',
-                display: true,
-                position: 'bottom',
-                align: 'start'
-            },
-         scales: {
-             y: {
-                 beginAtZero: true
-             },
-        plugins: {
-            legend: {
-                display: false,
-            },
-            title: {
-                
-                position: 'bottom',
-                align: 'start'
-            },
-        }
-            
-         }
-     }
- });
-    </script>
-    
+  <script src="graficas.js"></script>
 </body>
 </html>
